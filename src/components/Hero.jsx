@@ -143,7 +143,7 @@ className="
                 2000,
                 "Python Developer",
                 2000,
-                "Robotics & Intelligent Systems Enthusiast",
+                "Robotics Enthusiast",
                 2000,
                 "Designer & Video Editor",
                 2000,

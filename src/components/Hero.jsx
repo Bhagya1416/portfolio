@@ -8,20 +8,22 @@ function Hero() {
 
     <section
       id="home"
-      className="min-h-screen flex items-center px-4 md:px-8 pt-20"
+      className="min-h-screen flex items-center px-4 sm:px-6 md:px-8 pt-24 overflow-x-hidden"
     >
 
       <div
         className="
-          max-w-7xl
-          mx-auto
-          w-full
-          flex
-          flex-row
-          items-center
-          justify-between
-          gap-5
-        "
+  max-w-7xl
+  mx-auto
+  w-full
+  flex
+  flex-col
+  md:flex-row
+  items-center
+  justify-between
+  gap-10
+  md:gap-5
+"
       >
 
         {/* LEFT IMAGE */}
@@ -30,12 +32,12 @@ function Hero() {
   initial={{ opacity:0, x:-50 }}
   animate={{ opacity:1, x:0 }}
   transition={{ duration:1 }}
-  className="
-    w-[40%]
-    md:w-[45%]
-    flex
-    justify-center
-  "
+className="
+  w-full
+  md:w-[45%]
+  flex
+  justify-center
+"
 >
 
   <div className="relative">
@@ -98,9 +100,11 @@ function Hero() {
           animate={{ opacity:1, x:0 }}
           transition={{ duration:1 }}
           className="
-            w-[60%]
-            md:w-[55%]
-          "
+  w-full
+  md:w-[55%]
+  text-center
+  md:text-left
+"
         >
 
           <p className="text-violet-400 text-xs sm:text-sm md:text-lg mb-2">
@@ -109,8 +113,8 @@ function Hero() {
 
           <h1
             className="
-              text-2xl
-              sm:text-4xl
+              text-3xl
+              sm:text-5xl
               md:text-7xl
               font-bold
               leading-tight
@@ -125,8 +129,8 @@ function Hero() {
           <div
             className="
               mt-3
-              text-sm
-              sm:text-xl
+              text-base
+              sm:text-2xl
               md:text-4xl
               font-semibold
               text-gray-300
@@ -156,10 +160,10 @@ function Hero() {
             className="
               mt-4
               text-gray-400
-              leading-6
+              leading-7
               md:leading-8
-              text-xs
-              sm:text-sm
+              text-sm
+              sm:text-base
               md:text-lg
             "
           >

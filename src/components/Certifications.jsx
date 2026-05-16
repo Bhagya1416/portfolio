@@ -88,10 +88,10 @@ function Certifications() {
 
     <section
       id="certifications"
-      className="py-20 px-4"
+      className="py-20 px-4 sm:px-6 overflow-x-hidden"
     >
 
-      <div className="max-w-5xl mx-auto">
+      <div className="w-full max-w-5xl mx-auto">
 
         {/* HEADING */}
 
@@ -249,22 +249,29 @@ function Certifications() {
                 target="_blank"
                 rel="noreferrer"
                 className="
-                  flex
-                  items-center
-                  justify-center
-                  gap-2
-                  px-4
-                  py-2.5
-                  rounded-xl
-                  bg-gradient-to-r
-                  from-violet-600
-                  to-blue-600
-                  text-sm
-                  whitespace-nowrap
-                  hover:scale-105
-                  transition
-                  duration-300
-                "
+  w-auto
+  flex
+  items-center
+  justify-center
+  gap-1
+
+  px-3
+  py-2
+
+  rounded-lg
+
+  bg-gradient-to-r
+  from-violet-600
+  to-blue-600
+
+  text-xs
+
+  whitespace-nowrap
+
+  hover:scale-105
+  transition
+  duration-300
+"
               >
                 View
                 <FaExternalLinkAlt size={12} />

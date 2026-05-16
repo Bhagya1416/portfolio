@@ -1,9 +1,19 @@
 @import "tailwindcss";
 
-/* IMPORTANT: DO NOT style body colors */
+/* =========================
+   GLOBAL RESET
+========================= */
+
 body {
   margin: 0;
   font-family: sans-serif;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* optional smooth transition */
@@ -11,103 +21,93 @@ html {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Floating Social Icons */
+/* =========================
+   SAFE AREA (IMPORTANT FOR MOBILE)
+========================= */
 
-.social-icon{
-  width:48px;
-  height:48px;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  border-radius:50%;
-
-  background:rgba(255,255,255,0.08);
-
-  border:1px solid rgba(255,255,255,0.12);
-
-  backdrop-filter:blur(15px);
-
-  color:white;
-
-  font-size:18px;
-
-  transition:all 0.35s ease;
-
-  box-shadow:
-    0 4px 20px rgba(0,0,0,0.25);
+body {
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
 }
 
-.social-icon:hover{
+/* =========================
+   FLOATING SOCIAL ICONS
+========================= */
 
-  transform:translateY(-5px) scale(1.08);
+.social-icon {
+  width: 40px;
+  height: 40px;
 
-  background:linear-gradient(
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(15px);
+
+  color: white;
+  font-size: 16px;
+
+  transition: all 0.35s ease;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* hover effect (desktop only naturally) */
+.social-icon:hover {
+  transform: translateY(-5px) scale(1.08);
+
+  background: linear-gradient(
     135deg,
     #8b5cf6,
     #2563eb
   );
 
   box-shadow:
-    0 0 18px rgba(139,92,246,0.5),
-    0 0 40px rgba(37,99,235,0.35);
+    0 0 18px rgba(139, 92, 246, 0.5),
+    0 0 40px rgba(37, 99, 235, 0.35);
 }
 
-/* Mobile Optimization */
-
-@media(max-width:768px){
-
-  .social-icon{
-
-    width:42px;
-    height:42px;
-
-    font-size:16px;
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+  .social-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
   }
-
 }
-
-
-
 
 /* =========================
-   CUSTOM SWIPER DOTS
+   SWIPER DOTS
 ========================= */
 
-.custom-pagination{
-
-  position:relative;
-
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:10px;
+.custom-pagination {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 /* NORMAL DOT */
-
-.custom-pagination .swiper-pagination-bullet{
-
-  width:10px;
-  height:10px;
-
-  border-radius:999px;
-
-  background:rgba(255,255,255,0.35);
-
-  opacity:1;
-
-  transition:all 0.35s ease;
+.custom-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.35);
+  opacity: 1;
+  transition: all 0.35s ease;
 }
 
 /* ACTIVE DOT */
-
-.custom-pagination .swiper-pagination-bullet-active{
-
-  width:30px;
-
-  background:#8b5cf6;
-
-  box-shadow:0 0 12px rgba(139,92,246,0.7);
+.custom-pagination .swiper-pagination-bullet-active {
+  width: 30px;
+  background: #8b5cf6;
+  box-shadow: 0 0 12px rgba(139, 92, 246, 0.7);
 }
+
+

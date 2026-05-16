@@ -13,10 +13,10 @@ function Navbar() {
         border-b border-black/10 dark:border-white/10
       "
     >
-      <div className="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
 
         {/* LOGO */}
-        <h1 className="text-violet-500 text-2xl font-bold gradient-text">
+        <h1 className="text-violet-500 text-xl sm:text-2xl font-bold gradient-text">
           My Portfolio
         </h1>
 
